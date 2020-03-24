@@ -1,4 +1,4 @@
-# Репозиторий учебного проекта "Кексби-челлендж"
+# Landing page "Kvast"
 
-* Студент: [Александр Кузьменко](https://htmlacademy.ru/profile/id283545).
-* Наставник: [Тина Кузьменко](https://htmlacademy.ru/profile/tina_kuzmenko).
+PSD to HTML/CSS project (HTML Academy)
+Watch online: 
