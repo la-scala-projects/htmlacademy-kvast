@@ -1,10 +1,46 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    line-height: 30px;
-    font-family: "Arial", sans-serif;
-    font-style: normal;
-    color: #404040;
-    background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  color: #404040;
+  background-color: #ffffff;
+}
+
+.page-header {
+  padding-top: 60px;
+  padding-bottom: 140px;
+  background-color: #5b370d;
+  color: #ffffff;
+}
+
+.page-header__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.page-header__title {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about-us {
+  background-color: #ffcb78;
+}
+
+.press {
+  background-color: #ede5d8;
+}
+
+.order-now {
+  background-color: #ffcb78;
+}
+
+.page-footer {
+  background-color: #000000;
+  color: #ffffff;
 }
