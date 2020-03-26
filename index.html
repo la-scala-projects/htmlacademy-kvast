@@ -34,22 +34,30 @@
       <section class="new-items">
         <div class="container--big new-items__">
           <h2 class="new-items__main-title">Новинки</h2>
-          <div class="new-items__wrapper container">
+          <div class="new-items__wrapper">
             <div class="new-items__item">
               <h3 class="new-item__secondary-title">Вахтёр</h3>
-              <table class="new-item__consist">
-                <tr class="new-item__consist-tr">
-                  <td class="new-item__consist-td">Алк.</td>
-                  <td class="new-item__consist-td">&lt; 1%</td>
-                </tr>
-                <tr class="new-item__consist-tr">
-                  <td class="new-item__consist-td">Ккал</td>
-                  <td class="new-item__consist-td">35</td>
-                </tr>
-              </table>
+              <div class="new-item__info">
+                <div class="new-item__info-wrapper">
+                  <table class="new-item__consist">
+                    <tr class="new-item__consist-tr">
+                      <td class="new-item__consist-td">Алк.</td>
+                      <td class="new-item__consist-td">&lt; 1%</td>
+                    </tr>
+                    <tr class="new-item__consist-tr">
+                      <td class="new-item__consist-td">Ккал</td>
+                      <td class="new-item__consist-td">35</td>
+                    </tr>
+                  </table>
 
-              <p>Ржаной хлеб, Вода, Солод, Соль</p>
-              <img src="img/bottle-left.jpg" alt="Бутылка Вахтёра" />
+                  <p class="new-item__consist-description">Ржаной хлеб, Вода, Солод, Соль</p>
+                </div>
+                <img
+                  class="new-item__img"
+                  src="img/bottle-left.jpg"
+                  alt="Бутылка Вахтёра"
+                />
+              </div>
               <p>
                 Терпкий и мощный, вкус этого кваса взбодрит после тяжёлого дня и
                 придаст сил для вечерних приключений!
@@ -59,19 +67,27 @@
             </div>
             <div class="new-items__item">
               <h3 class="new-item__secondary-title">Романтик</h3>
-              <table class="new-item__consist">
-                <tr class="new-item__consist-tr">
-                  <td class="new-item__consist-td">Алк.</td>
-                  <td class="new-item__consist-td">&lt; 0,5%</td>
-                </tr>
-                <tr class="new-item__consist-tr">
-                  <td class="new-item__consist-td">Ккал</td>
-                  <td class="new-item__consist-td">27</td>
-                </tr>
-              </table>
+              <div class="new-item__info">
+                <div class="new-item__info-wrapper">
+                  <table class="new-item__consist">
+                    <tr class="new-item__consist-tr">
+                      <td class="new-item__consist-td">Алк.</td>
+                      <td class="new-item__consist-td">&lt; 0,5%</td>
+                    </tr>
+                    <tr class="new-item__consist-tr">
+                      <td class="new-item__consist-td">Ккал</td>
+                      <td class="new-item__consist-td">27</td>
+                    </tr>
+                  </table>
 
-              <p>Ячменный хлеб, Вода, Солод, Апельсин</p>
-              <img src="img/bottle-right.jpg" alt="Бутылка Романтика" />
+                  <p class="new-item__consist-description">Ячменный хлеб, Вода, Солод, Апельсин</p>
+                </div>
+                <img
+                  class="new-item__img"
+                  src="img/bottle-right.jpg"
+                  alt="Бутылка Романтика"
+                />
+              </div>
               <p>
                 Лёгкий и освежающий напиток поможет сохранять отличное
                 настроение в течение всего дня.
@@ -111,17 +127,23 @@
       <section class="info">
         <div class="container">
           <h2 class="info__title">Немного истории</h2>
-          <dl>
-            <dt>
-              Происхождение кваса
+          <dl class="info__articles">
+            <dt class="info__article-top-wrapper">
+              <h3 class="info__article-title">Происхождение кваса</h3>
               <cite
                 >Источник:
-                <a href="#" class="info-link">ru.wikipedia.org</a></cite
+                <a href="#" class="info__article-link"
+                  >ru.wikipedia.org</a
+                ></cite
               >
             </dt>
-            <dd>
-              <img src="img/wiki-1.png" alt="Натюрморт с квасом 1" />
-              <p>
+            <dd class="info__article-bottom-wrapper">
+              <img
+                class="info__article-picture"
+                src="img/wiki-1.png"
+                alt="Натюрморт с квасом 1"
+              />
+              <p class="info__article-content">
                 Квас на Руси появился в X-XI веке. Само слово «квас» тоже имеет
                 древнерусское происхождение. Помимо России квас готовят в
                 Белоруссии, Сербии, Македонии, Словакии и многих других странах,
@@ -129,21 +151,27 @@
               </p>
             </dd>
 
-            <dt>
-              Классификация кваса
+            <dt class="info__article-top-wrapper">
+              <h3 class="info__article-title">Классификация кваса</h3>
               <cite
                 >Источник:
-                <a href="#" class="info-link">ru.wikipedia.org</a></cite
+                <a href="#" class="info__article-link"
+                  >ru.wikipedia.org</a
+                ></cite
               >
             </dt>
 
-            <dd>
-              <img src="img/wiki-2.png" alt="Натюрморт с квасом 2" />
-              <p>
-                По российскому ГОСТу для промышленного изготовления — это
-                напиток с объёмной долей этилового спирта не более 1,2%,
-                изготовленный в результате незавершённого спиртового и
-                молочнокислого брожения сусла.
+            <dd class="info__article-bottom-wrapper">
+              <img
+                class="info__article-picture"
+                src="img/wiki-2.png"
+                alt="Натюрморт с квасом 2"
+              />
+              <p class="info__article-content">
+                По российскому ГОСТу для промышленного изготовления — это с
+                объёмной долей этилового спирта не более 1,2%, изготовленный в
+                результате незавершённого спиртового и молочнокислого брожения
+                сусла.
               </p>
             </dd>
           </dl>
