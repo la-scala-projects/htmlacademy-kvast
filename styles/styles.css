@@ -200,8 +200,8 @@ img {
 
 .about-us {
   background-color: #ffcb78;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 164px;
+  padding-bottom: 75px;
 }
 
 .about-us__list {
@@ -213,11 +213,61 @@ img {
   margin: 0;
 }
 
+.about-us__list-item {
+  width: 215px;
+  position: relative;
+}
+
+.about-us__list-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -85px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.about-us__list-item--brew::before {
+  width: 52px;
+  height: 71px;
+  background-image: url('../img/icon-brew.png');
+}
+
+.about-us__list-item--matreshka::before {
+  width: 46px;
+  height: 65px;
+  background-image: url('../img/icon-matreshka.png');
+}
+
+.about-us__list-item--thumbup::before {
+  width: 63px;
+  height: 58px;
+  background-image: url('../img/icon-thumbsup.png');
+}
+
+.about-us__list-item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -90px;
+  top: -85px;
+  width: 1px;
+  height: 233px;
+  background-color: #e5b66c;
+}
+
+.about-us__list-item:last-child::after {
+  display: none;
+}
+
 .about-us__title {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: bold;
   color: #000000;
+  margin-bottom: 19px;
 }
 
 .info {
