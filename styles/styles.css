@@ -46,8 +46,13 @@ img {
 }
 
 .button--ghost {
-  background-color: #ffffff;
+  background-color: transparent;
   color: #834700;
+}
+
+.button--ghost-grey {
+  color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 0, 0, 0.3);
 }
 
 .page-header {
@@ -332,7 +337,7 @@ img {
 
 .press {
   background-color: #ede5d8;
-  padding-top: 90px;
+  padding-top: 95px;
   padding-bottom: 90px;
 }
 
@@ -342,6 +347,47 @@ img {
   text-transform: uppercase;
   font-size: 40px;
   font-weight: bold;
+  color: #000000;
+  margin-top: 0;
+}
+
+.press__title {
+  margin-bottom: 90px;
+}
+
+.press__blockquote {
+  margin: 0;
+  max-width: 690px;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.press__blockquote::before {
+  content: "";
+  display: block;
+  width: 41px;
+  height: 31px;
+  position: absolute;
+  top: 6px;
+  left: -106px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  background-image: url('../img/quotes.png');
+}
+
+.press__source-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.press__source-name {
+  font-style: normal;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
   color: #000000;
 }
 
