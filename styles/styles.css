@@ -36,10 +36,10 @@ img {
 
 .button {
   display: flex;
-  padding: 8px 22px;
+  padding: 8px 20px;
   background-color: #834700;
   color: #ffffff;
-  font-style: bold;
+  font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   border: 2px solid #834700;
@@ -53,6 +53,22 @@ img {
 .button--ghost-grey {
   color: rgba(0, 0, 0, 0.3);
   border-color: rgba(0, 0, 0, 0.3);
+}
+
+.button--form {
+  font-size: 16px;
+  padding: 14px 18px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
 }
 
 .page-header {
@@ -196,11 +212,11 @@ img {
 }
 
 .new-item__button {
-  margin-right: 5px;
+  margin-right: 7px;
 }
 
 .new-item__button-buy {
-  margin-right: 23px;
+  margin-right: 26px;
 }
 
 .about-us {
@@ -450,8 +466,106 @@ img {
 
 .order-now {
   background-color: #ffcb78;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 95px;
+  padding-bottom: 110px;
+}
+
+.order-now__title {
+  margin-bottom: 89px;
+}
+
+.order-now__description {
+  margin: 0;
+  max-width: 655px;
+  margin-bottom: 65px;
+}
+
+.order-now__form {
+  display: block;
+  width: 630px;
+}
+
+.order-now__input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-now__input-wrapper--small {
+  width: 290px;
+}
+
+.order-now__input-common-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-now__checkbox-wrapper {
+  display: flex;
+}
+
+.order-now__label {
+  display: block;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.order-now__label--checkbox {
+  padding-left: 55px;
+  position: relative;
+  margin-bottom: 39px;
+}
+
+.order-now__label--checkbox::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -12px;
+  left: -1px;
+  width: 37px;
+  height: 37px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.order-now__label--checkbox::after {
+  content: "";
+  display: none;
+  position: absolute;
+  width: 17px;
+  height: 11px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../img/check.png");
+  top: 1px;
+  left: 8px;
+}
+
+.order-now__checkbox-input:checked + .order-now__label--checkbox::after {
+  display: block;
+}
+
+.order-now__input,
+.order-now__select,
+.order-now__textarea {
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  margin-bottom: 19px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.order-now__textarea {
+  height: 120px;
+  padding: 20px;
+  resize: none;
+  margin-bottom: 39px;
 }
 
 .page-footer {
@@ -465,15 +579,21 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-left: 36px;
+  padding-right: 109px;
+  margin-bottom: 47px;
 }
 
 .page-footer__nav {
   list-style: none;
-  padding: 0;
+  padding: 14px 0;
   margin: 0;
+  margin-bottom: 4px;
   display: flex;
   justify-content: space-between;
   width: 600px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .page-footer__nav-link {
@@ -481,4 +601,83 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   font-style: bold;
+}
+
+.page-footer__bottom-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-footer__social {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page-footer__social-button,
+.page-footer__academy-logo {
+  font-size: 0;
+  display: block;
+  width: 70px;
+  height: 68px;
+  background-color: #1b1b1b;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  border: 1px solid rgba(255, 203, 120, 0.1);
+  border-right: none;
+}
+
+.page-footer__social-button:last-child,
+.page-footer__academy-logo {
+  border-right: 1px solid rgba(255, 203, 120, 0.1);
+}
+
+.page-footer__social-button--instagram {
+  background-image: url("../img/insta-icon.png");
+}
+
+.page-footer__social-button--facebook {
+  background-image: url("../img/fb-icon.png");
+}
+
+.page-footer__social-button--vk {
+  background-image: url("../img/vk-icon.png");
+}
+
+.page-footer__paragraph {
+  font-size: 14px;
+  color: #989898;
+  line-height: 20px;
+  font-weight: normal;
+  max-width: 200px;
+  margin: 0;
+  padding-left: 7px;
+  padding-bottom: 5px;
+  margin-right: 120px;
+}
+
+.page-footer__developer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.page-footer__academy-logo {
+  margin-right: 30px;
+  background-image: url("../img/htmlacademy.png");
+}
+
+.page-footer__academy-description,
+.page-footer__academy-link {
+  font-size: 14px;
+  margin: 0;
+  font-weight: bold;
+  color: #989898;
+}
+
+.page-footer__academy-link {
+  font-weight: normal;
+  text-decoration: none;
 }
